@@ -1,8 +1,5 @@
 " An example for a vimrc file.
 "
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2002 Sep 19
-"
 " To use it, copy it to
 "     for Unix and OS/2:  ~/.vimrc
 "	      for Amiga:  s:.vimrc
@@ -36,78 +33,78 @@ set incsearch		" do incremental searching
 vmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>p :r! cat /tmp/vitmp<CR>
 
-"Óï·¨¸ßÁÁ
+"è¯­æ³•é«˜äº®
 syntax enable
 syntax on
-"ÏÔÊ¾ĞĞºÅ
+"æ˜¾ç¤ºè¡Œå·
 set nu
 
-"ĞŞ¸ÄÄ¬ÈÏ×¢ÊÍÑÕÉ«
+"ä¿®æ”¹é»˜è®¤æ³¨é‡Šé¢œè‰²
 "hi Comment ctermfg=DarkCyan
-"ÔÊĞíÍË¸ñ¼üÉ¾³ı
+"å…è®¸é€€æ ¼é”®åˆ é™¤
 "set backspace=2
-"ÆôÓÃÊó±ê
+"å¯ç”¨é¼ æ ‡
 set mouse=v
 "set selection=exclusive
 "set selectmode=mouse,key
-"°´CÓïÑÔ¸ñÊ½Ëõ½ø
+"æŒ‰Cè¯­è¨€æ ¼å¼ç¼©è¿›
 set cindent
 set autoindent
 set smartindent
 set shiftwidth=4
 
-" ÔÊĞíÔÚÓĞÎ´±£´æµÄĞŞ¸ÄÊ±ÇĞ»»»º³åÇø
+" å…è®¸åœ¨æœ‰æœªä¿å­˜çš„ä¿®æ”¹æ—¶åˆ‡æ¢ç¼“å†²åŒº
 "set hidden
 
-" ÉèÖÃÎŞ±¸·İÎÄ¼ş
+" è®¾ç½®æ— å¤‡ä»½æ–‡ä»¶
 set writebackup
 set nobackup
 
-"ÏÔÊ¾À¨ºÅÆ¥Åä
+"æ˜¾ç¤ºæ‹¬å·åŒ¹é…
 set showmatch
-"À¨ºÅÆ¥ÅäÏÔÊ¾Ê±¼äÎª1(µ¥Î»ÊÇÊ®·ÖÖ®Ò»Ãë)
+"æ‹¬å·åŒ¹é…æ˜¾ç¤ºæ—¶é—´ä¸º1(å•ä½æ˜¯ååˆ†ä¹‹ä¸€ç§’)
 set matchtime=5
-"ÏÔÊ¾µ±Ç°µÄĞĞºÅÁĞºÅ£º
+"æ˜¾ç¤ºå½“å‰çš„è¡Œå·åˆ—å·ï¼š
 set ruler
-"ÔÚ×´Ì¬À¸ÏÔÊ¾ÕıÔÚÊäÈëµÄÃüÁî
+"åœ¨çŠ¶æ€æ æ˜¾ç¤ºæ­£åœ¨è¾“å…¥çš„å‘½ä»¤
 set showcmd
 
 set foldmethod=syntax
-"Ä¬ÈÏÇé¿öÏÂ²»ÕÛµş
+"é»˜è®¤æƒ…å†µä¸‹ä¸æŠ˜å 
 set foldlevel=100
-" ¿ªÆô×´Ì¬À¸ĞÅÏ¢
+" å¼€å¯çŠ¶æ€æ ä¿¡æ¯
 set laststatus=2
-" ÃüÁîĞĞµÄ¸ß¶È£¬Ä¬ÈÏÎª1£¬ÕâÀïÉèÎª2
+" å‘½ä»¤è¡Œçš„é«˜åº¦ï¼Œé»˜è®¤ä¸º1ï¼Œè¿™é‡Œè®¾ä¸º2
 set cmdheight=2
 
 
-" ÏÔÊ¾Tab·û£¬Ê¹ÓÃÒ»¸ßÁÁÊúÏß´úÌæ
+" æ˜¾ç¤ºTabç¬¦ï¼Œä½¿ç”¨ä¸€é«˜äº®ç«–çº¿ä»£æ›¿
 set list
 "set listchars=tab:\|\ ,
 set listchars=tab:>-,trail:-
 
 
-"Õì²âÎÄ¼şÀàĞÍ
+"ä¾¦æµ‹æ–‡ä»¶ç±»å‹
 filetype on
-"ÔØÈëÎÄ¼şÀàĞÍ²å¼ş
+"è½½å…¥æ–‡ä»¶ç±»å‹æ’ä»¶
 filetype plugin on
-"ÎªÌØ¶¨ÎÄ¼şÀàĞÍÔØÈëÏà¹ØËõ½øÎÄ¼ş
+"ä¸ºç‰¹å®šæ–‡ä»¶ç±»å‹è½½å…¥ç›¸å…³ç¼©è¿›æ–‡ä»¶
 filetype indent on
-" ÆôÓÃ×Ô¶¯²¹È«
+" å¯ç”¨è‡ªåŠ¨è¡¥å…¨
 filetype plugin indent on 
 
 
-"ÉèÖÃ±àÂë×Ô¶¯Ê¶±ğ, ÖĞÎÄÒıºÅÏÔÊ¾
-filetype on "´ò¿ªÎÄ¼şÀàĞÍ¼ì²â
+"è®¾ç½®ç¼–ç è‡ªåŠ¨è¯†åˆ«, ä¸­æ–‡å¼•å·æ˜¾ç¤º
+filetype on "æ‰“å¼€æ–‡ä»¶ç±»å‹æ£€æµ‹
 "set fileencodings=euc-cn,ucs-bom,utf-8,cp936,gb2312,gb18030,gbk,big5,euc-jp,euc-kr,latin1
 set fileencodings=utf-8,gb2312,gbk,gb18030
-"Õâ¸öÓÃÄÜºÜ¸ø¾¢£¬²»¹ÜencodingÊÇÊ²Ã´±àÂë£¬¶¼ÄÜ½«ÎÄ±¾ÏÔÊ¾ºº×Ö
+"è¿™ä¸ªç”¨èƒ½å¾ˆç»™åŠ²ï¼Œä¸ç®¡encodingæ˜¯ä»€ä¹ˆç¼–ç ï¼Œéƒ½èƒ½å°†æ–‡æœ¬æ˜¾ç¤ºæ±‰å­—
 "set termencoding=gb2312
 set termencoding=utf-8
-"ĞÂ½¨ÎÄ¼şÊ¹ÓÃµÄ±àÂë
+"æ–°å»ºæ–‡ä»¶ä½¿ç”¨çš„ç¼–ç 
 set fileencoding=utf-8
 "set fileencoding=gb2312
-"ÓÃÓÚÏÔÊ¾µÄ±àÂë£¬½ö½öÊÇÏÔÊ¾
+"ç”¨äºæ˜¾ç¤ºçš„ç¼–ç ï¼Œä»…ä»…æ˜¯æ˜¾ç¤º
 set encoding=utf-8
 "set encoding=utf-8
 "set encoding=euc-cn
@@ -117,12 +114,12 @@ set encoding=utf-8
 set fileformat=unix
 
 
-"ÉèÖÃ¸ßÁÁËÑË÷
+"è®¾ç½®é«˜äº®æœç´¢
 set hlsearch
-"ÔÚËÑË÷Ê±£¬ÊäÈëµÄ´Ê¾äµÄÖğ×Ö·û¸ßÁÁ
+"åœ¨æœç´¢æ—¶ï¼Œè¾“å…¥çš„è¯å¥çš„é€å­—ç¬¦é«˜äº®
 set incsearch
 
-" ×ÅÉ«Ä£Ê½
+" ç€è‰²æ¨¡å¼
 set t_Co=256
 "colorscheme wombat256mod
 "colorscheme gardener
@@ -133,27 +130,27 @@ colorscheme desert
 "colorscheme torte
 "colorscheme default
 
-" ×ÖÌå && ×ÖºÅ
+" å­—ä½“ && å­—å·
 set guifont=Monaco:h10
 "set guifont=Consolas:h10
 
-" :LoadTemplate       ¸ù¾İÎÄ¼şºó×º×Ô¶¯¼ÓÔØÄ£°å
+" :LoadTemplate       æ ¹æ®æ–‡ä»¶åç¼€è‡ªåŠ¨åŠ è½½æ¨¡æ¿
 "let g:template_path='/home/ruchee/.vim/template/'
 
-" :AuthorInfoDetect   ×Ô¶¯Ìí¼Ó×÷Õß¡¢Ê±¼äµÈĞÅÏ¢£¬±¾ÖÊÊÇNERD_commenter && authorinfoµÄ½áºÏ
+" :AuthorInfoDetect   è‡ªåŠ¨æ·»åŠ ä½œè€…ã€æ—¶é—´ç­‰ä¿¡æ¯ï¼Œæœ¬è´¨æ˜¯NERD_commenter && authorinfoçš„ç»“åˆ
 ""let g:vimrc_author='sunshanlu'
 ""let g:vimrc_email='sunshanlu@baidu.com'
 ""let g:vimrc_homepage='http://www.sunshanlu.com'
 "
 "
-" Ctrl + E            Ò»²½¼ÓÔØÓï·¨Ä£°åºÍ×÷Õß¡¢Ê±¼äĞÅÏ¢
+" Ctrl + E            ä¸€æ­¥åŠ è½½è¯­æ³•æ¨¡æ¿å’Œä½œè€…ã€æ—¶é—´ä¿¡æ¯
 ""map <c-e> <ESC>:AuthorInfoDetect<CR><ESC>Gi
 ""imap <c-e> <ESC>:AuthorInfoDetect<CR><ESC>Gi
 ""vmap <c-e> <ESC>:AuthorInfoDetect<CR><ESC>Gi
 
 
 
-" ======= ÒıºÅ && À¨ºÅ×Ô¶¯Æ¥Åä ======= "
+" ======= å¼•å· && æ‹¬å·è‡ªåŠ¨åŒ¹é… ======= "
 "
 ":inoremap ( ()<ESC>i
 
@@ -179,7 +176,7 @@ set guifont=Monaco:h10
 "
 ":inoremap * **<ESC>i
 
-" Ã¿ĞĞ³¬¹ı80¸öµÄ×Ö·ûÓÃÏÂ»®Ïß±êÊ¾
+" æ¯è¡Œè¶…è¿‡80ä¸ªçš„å­—ç¬¦ç”¨ä¸‹åˆ’çº¿æ ‡ç¤º
 ""au BufRead,BufNewFile *.s,*.asm,*.h,*.c,*.cpp,*.java,*.cs,*.lisp,*.el,*.erl,*.tex,*.sh,*.lua,*.pl,*.php,*.tpl,*.py,*.rb,*.erb,*.vim,*.js,*.jade,*.coffee,*.css,*.xml,*.html,*.shtml,*.xhtml Underlined /.\%81v/
 "
 "
@@ -232,26 +229,26 @@ else
 
 endif " has("autocmd")
 
-" Ôö¼ÓÊó±êĞĞ¸ßÁÁ
+" å¢åŠ é¼ æ ‡è¡Œé«˜äº®
 set cursorline
 hi CursorLine  cterm=NONE   ctermbg=darkred ctermfg=white
 
-" ÉèÖÃtabÊÇËÄ¸ö¿Õ¸ñ
+" è®¾ç½®tabæ˜¯å››ä¸ªç©ºæ ¼
 set ts=4
 set expandtab
 
-" Ö÷Òª¸øTlistÊ¹ÓÃ
+" ä¸»è¦ç»™Tlistä½¿ç”¨
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Auto_Open = 1
 
-" ±à¼­ÎÄ¼şÊ±¼ÓÍ·
+" ç¼–è¾‘æ–‡ä»¶æ—¶åŠ å¤´
 autocmd BufNewFile *.cpp,*.[ch],*.sh,*.java exec ":call SetTitle()"
 
 func SetTitle()
     if &filetype == 'sh'
 	    call setline(1,"\#########################################################################")
 	    call append(line("."), "\# File Name: ".expand("%"))
-	    call append(line(".")+1, "\# Author: honka")
+	    call append(line(".")+1, "\# Author: yangcheng")
 	    call append(line(".")+2, "\# Mail: yangcheng.iron@bytedance.com")
 	    call append(line(".")+3, "\# Created Time: ".strftime("%c"))
 	    call append(line(".")+4, "\#########################################################################")
@@ -260,7 +257,7 @@ func SetTitle()
     else
 	    call setline(1, "/*************************************************************************")
 	    call append(line("."), "    > File Name: ".expand("%"))
-	    call append(line(".")+1, "    > Author: honka")
+	    call append(line(".")+1, "    > Author: yangcheng")
 	    call append(line(".")+2, "    > Mail: yangcheng.iron@bytedance.com")
 	    call append(line(".")+3, "    > Created Time: ".strftime("%c"))
 	    call append(line(".")+4, " ************************************************************************/")
